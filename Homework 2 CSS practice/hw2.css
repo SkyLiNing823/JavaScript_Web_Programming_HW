@@ -1,0 +1,71 @@
+nav{
+        background-color: #87CEEB;
+}
+nav div{
+        display:inline-block;
+        padding:10px;
+}
+
+ #sbox{
+        float:right;
+}
+
+nav .menu{
+        position:relative;
+}
+nav .submenu{
+        display:none;
+}
+
+nav .menu:hover{
+        background-color: yellow;
+}    
+
+nav .menu:hover .submenu{
+        background-color:white;
+        display:block;
+        position:absolute;
+        width:5em;
+        left:0em;
+        top: 2em;
+        border:solid 1px blue;
+}    
+
+nav .menu:hover .submenu div{
+        display:block;
+}     
+
+@media screen and (max-width: 480px)
+{
+        nav{
+                display: grid;            
+        }
+         #sbox
+        {
+                position:relative;
+                bottom: 7.5em;
+        }
+         .menu
+        {
+                position:relative;
+                top: 2.5em;
+        }
+        nav .menu:hover .submenu div
+        {
+                display:inline-block;
+              
+        }
+        nav .menu:hover .submenu{
+                width:13em;
+                top: 1.2em;
+            
+        }   
+}
+
+/*
+nav div::nth-child(1) {grid-column: 1/ span 2;grid-row: 2;}
+        nav div::nth-child(2) {grid-column: 1/ span 2;grid-row: 2;}
+        nav div::nth-child(3) {grid-column: 1/ span 2;grid-row: 2;}
+        nav div::nth-child(4){ float:top; background-color: red;}
+*/
+    

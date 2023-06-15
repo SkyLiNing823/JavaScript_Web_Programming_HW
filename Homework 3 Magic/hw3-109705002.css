@@ -1,0 +1,7 @@
+*{text-align:center;}
+
+tr td{border:1px solid BLUE;}
+
+table{
+        display:inline-block;
+}
